@@ -6,3 +6,5 @@
 git add copies a change to the staging area, while git commit records it in history.
 .env must not be committed because it may contain secrets.
 git diff shows unstaged changes, git diff --staged shows what will be in the next commit.
+
+aaaaa
