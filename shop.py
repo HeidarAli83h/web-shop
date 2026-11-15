@@ -21,3 +21,6 @@ def apply_discount(price, percent):
 
 def add_tax(price, rate=0.2):
     return price * (1 + rate)
+
+
+print(10) # Ali Ayali
