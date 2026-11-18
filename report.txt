@@ -1,10 +1,44 @@
+### Git Commit History
+
+```
 * fbcf34f (HEAD -> main) Add .gitignore
 * e247775 Add search test
 * 2d60219 Add search by name
 * d460150 Add Product model
 * 200662e Add README
-git add copies a change to the staging area, while git commit records it in history.
-.env must not be committed because it may contain secrets.
-git diff shows unstaged changes, git diff --staged shows what will be in the next commit.
+```
 
-aaaaa
+### Code Improvements
+
+- Improved the `Product` class with input validation for SKU, product name, and price.
+- Added a readable `__repr__()` method for product objects.
+- Optimized `find_by_name()` using `casefold()` for case-insensitive searching.
+- Improved `apply_discount()` with discount percentage validation.
+- Improved `add_tax()` with price and tax rate validation.
+- Added English documentation and comments to the Python code.
+
+### Testing Improvements
+
+- Introduced `pytest.fixture` to reuse test data.
+- Improved the existing product search tests.
+- Added tests for case-insensitive search.
+- Added tests for partial product name matching.
+- Added a test for empty search input.
+- Verified that searching for a non-existing product returns an empty list.
+
+### Git Notes
+
+`git add` moves changes to the staging area, while `git commit` records them in the repository history.
+
+`.env` must not be committed because it may contain sensitive information such as passwords, API keys, and other secrets.
+
+- `git diff` displays unstaged changes.
+- `git diff --staged` displays staged changes that will be included in the next commit.
+
+### Test Execution
+
+```
+pytest -v
+```
+
+این نسخه برای اضافه کردن به مستندات پروژه GitHub مناسبه. فقط دقت کن هش کامیت‌های بالا مربوط به تاریخچه قبلی هستند و برای تغییرات جدید باید کامیت‌های واقعی جدید ثبت کنی.
