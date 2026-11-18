@@ -63,3 +63,4 @@ print(apply_discount(1000, 10))
 print(add_tax(1000))
 ##Com
 
+##CC
