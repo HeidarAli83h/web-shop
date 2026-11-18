@@ -24,3 +24,4 @@ def add_tax(price, rate=0.2):
 
 
 print(10) # Ali Ayali
+print(10) # H
